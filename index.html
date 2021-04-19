@@ -6,9 +6,36 @@
   <title>Bicycle For Everyone</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"position":"bottom","margin":"small","content":{"href":"https://krud56.github.io/InternShip/copyright.html","message":"This Website Uses Cookies To enhance your experience","link":"Cookies Policy","button":"Close"}})});</script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css" />
+  <script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script>
   <script>
-
+    window.addEventListener("load", function() {
+      window.wpcc.init({
+        "border": "thin",
+        "corners": "small",
+        "colors": {
+          "popup": {
+            "background": "#222222",
+            "text": "#ffffff",
+            "border": "#f9f9f9"
+          },
+          "button": {
+            "background": "#f9f9f9",
+            "text": "#000000"
+          }
+        },
+        "position": "bottom",
+        "margin": "small",
+        "content": {
+          "href": "https://krud56.github.io/InternShip/copyright.html",
+          "message": "This Website Uses Cookies To enhance your experience",
+          "link": "Cookies Policy",
+          "button": "Close"
+        }
+      })
+    });
+  </script>
+  <script>
     // scroll function for cycle list starts
     function myBicycleLinstFunction() {
       var elmnt = document.getElementById("CycleListID");
@@ -115,9 +142,9 @@
 
 <body>
   <!-- Navigation Bar Starts -->
-  <header id="index">
+  <div id="myHeader">
 
-    <nav class="header">
+    <nav class="header" id="index2">
 
       <ul class="headerClass">
         <div class="imageClassNavbar">
@@ -134,7 +161,7 @@
       </ul>
     </nav>
 
-  </header>
+  </div>
   <!-- Navigation Bar Ends -->
   <!-- Hero Section Starts -->
   <div class="hero-image">
@@ -249,27 +276,29 @@
   </div>
   <!-- find station saction ends -->
   <!-- footer starts -->
-  <footer>
-    <div class="footerClass">
-      <div class="paragraphFooter">
-        <p>Copyright-2021</p>
-      </div>
-      <div class="footerClass2">
-        <ul class=footerContainer>
-          <li><a href="#" class="fa fa-facebook footerIcons"></a></li>
-          <li><a href="#" class="fa fa-twitter footerIcons"></a></li>
-          <li><a href="#" class="fa fa-linkedin footerIcons"></a></li>
-          <li><a href="#" class="fa fa-instagram footerIcons"></a></li>
-          <li><a href="#" class="fa fa-youtube footerIcons"></a></li>
+  <footer class="footerMain">
 
-        </ul>
-        <div class="paragraphFooter">
-          <a class="footerTermsAndConditions" href="https://krud56.github.io/InternShip/copyright.html">Terms And Conditions</a>
-        </div>
 
-      </div>
+    <p>Copyright-2021</p>
 
-    </div>
+<div class="footerImages">
+  <ul class=footerContainer>
+    <li><a href="#" class="fa fa-facebook footerIcons"></a></li>
+    <li><a href="#" class="fa fa-twitter footerIcons"></a></li>
+    <li><a href="#" class="fa fa-linkedin footerIcons"></a></li>
+    <li><a href="#" class="fa fa-instagram footerIcons"></a></li>
+    <li><a href="#" class="fa fa-youtube footerIcons"></a></li>
+
+  </ul>
+</div>
+
+
+    <a class="footerTermsAndConditions" href="https://krud56.github.io/InternShip/copyright.html">Terms And Conditions</a>
+
+
+
+
+
   </footer>
   <!-- footer ends -->
   <!-- dialoge box for login starts -->

@@ -41,6 +41,7 @@ html {
  /* css for navbar */
 .header
 {
+
   padding: 14px 0 14px 0;
   width: 100%;
   background-color: white;
@@ -347,21 +348,12 @@ margin-left: 20px;
   text-decoration: none;
   display:flex;
   text-align: center;
+  margin-left: auto;
+
 
 }
 /* css for footer class */
-.footerClass{
-  color: black;
-  display: inline;
-  text-align: center;
-}
-/* css for footer class */
-.footerClass2
-{
-  margin-left: 625px;
-  display: inline-block;
-  text-align: center;
-}
+
 /* css for icons used in footer */
 .footerIcons
 
@@ -721,7 +713,16 @@ margin-left: 20px;
   text-align: center;
   text-decoration: none;
   color: black;
-  margin-left: 65px;
+  display: block;
+
   font-size: 10px;
   padding-bottom: 20px;
+}
+.footerMain{
+  text-align: center;
+}
+.footerImages{
+  text-align: center;
+  display: inline-block;
+  padding-right: 50px;
 }
