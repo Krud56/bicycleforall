@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Bicycle For Everyone</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.css"/><script src="https://cdn.wpcc.io/lib/1.0.2/cookieconsent.min.js" defer></script><script>window.addEventListener("load", function(){window.wpcc.init({"border":"thin","corners":"small","colors":{"popup":{"background":"#222222","text":"#ffffff","border":"#f9f9f9"},"button":{"background":"#f9f9f9","text":"#000000"}},"position":"bottom","margin":"small","content":{"href":"https://krud56.github.io/InternShip/copyright.html","message":"This Website Uses Cookies To enhance your experience","link":"Cookies Policy","button":"Close"}})});</script>
+  <script>
+
+    // scroll function for cycle list starts
+    function myBicycleLinstFunction() {
+      var elmnt = document.getElementById("CycleListID");
+      elmnt.scrollIntoView();
+    }
+    // scroll function for cycle list ends
+    // scroll function for aboutUs starts
+
+    function myAboutUsFunction() {
+      var elmnt1 = document.getElementById("AboutUsID");
+      elmnt1.scrollIntoView();
+    }
+    // scroll function for aboutUs Ends
+    // scroll function for home starts
+    function myHomeFunction() {
+      var elmnt = document.getElementById("index");
+      elmnt.scrollIntoView();
+    }
+    // scroll function for home Ends
+    // scroll function for HelpAndSupport starts
+    function myHelpAndSupportFunction() {
+      var elmnt = document.getElementById("helpAndSupportID");
+      elmnt.scrollIntoView();
+    }
+    // scroll function for HelpAndSupport Ends
+    // scroll function for FindStation starts
+
+    function myFindStationFunction() {
+      var elmnt = document.getElementById("FindStationID");
+      elmnt.scrollIntoView();
+    }
+    // scroll function for FindStation ends
+    //funtion to open dialoge of login,hero cycle,avon cycle,herculas cycle respectivly
+
+    const showDialog = () => {
+      document.getElementById('dialog').classList.add('show')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    };
+
+    const showDialog2 = () => {
+      document.getElementById('dialog2').classList.add('show')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    };
+    const showDialog3 = () => {
+      document.getElementById('dialog3').classList.add('show')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    };
+    const showDialog4 = () => {
+      document.getElementById('dialog4').classList.add('show')
+      const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+      const body = document.body;
+      body.style.position = 'fixed';
+      body.style.top = `-${scrollY}`;
+    };
+    //funtion to cloase dialoge of login,hero cycle,avon cycle,herculas cycle respectivly
+    const closeDialog = () => {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.getElementById('dialog').classList.remove('show');
+    }
+    const closeDialog2 = () => {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.getElementById('dialog2').classList.remove('show');
+    }
+    const closeDialog3 = () => {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.getElementById('dialog3').classList.remove('show');
+    }
+    const closeDialog4 = () => {
+      const body = document.body;
+      const scrollY = body.style.top;
+      body.style.position = '';
+      body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+      document.getElementById('dialog4').classList.remove('show');
+    }
+    window.addEventListener('scroll', () => {
+      document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    });
+  </script>
+
+
+</head>
+
+<body>
+  <!-- Navigation Bar Starts -->
+  <header id="index">
+
+    <nav class="header">
+
+      <ul class="headerClass">
+        <div class="imageClassNavbar">
+          <li class="headerCycleClass"><a class="" href="#"><i class="fa fa-bicycle " style="color:red;" aria-hidden="true"></i></a></li>
+
+        </div>
+
+        <li class="listItem listItemMarginTop1"><button class="headerButtonHome" type="button" onclick="myHomeFunction()" name="button">Home</button></li>
+        <li class="listItem listItemMarginTop1"><button class="headerButton1" type="button" onclick="myBicycleLinstFunction()" name="button">Bicycle List</button></li>
+        <li class="listItem listItemMarginTop1"><button class="headerButton1" type="button" onclick="myAboutUsFunction()" name="button">About US</button></li>
+        <li class="listItem listItemMarginTop1"><button class="headerButton1" type="button" onclick="myHelpAndSupportFunction()" name="button">Help & Support</button></li>
+        <li class="listItem listItemMarginTop1"><button class="headerButton1" type="button" onclick="myFindStationFunction()" name="button">Find Station</button></li>
+        <li class="listItem listItemMarginTop1"><button class="headerButton" type="button" id="show" onclick="showDialog()" name="button">Login/Sign Up!</button></li>
+      </ul>
+    </nav>
+
+  </header>
+  <!-- Navigation Bar Ends -->
+  <!-- Hero Section Starts -->
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Bike For All</h1>
+      <p>Get Your Bike Now!!</p>
+      <button type="button" class="btn heroButton" onclick="myBicycleLinstFunction()">Explore</button>
+    </div>
+
+
+  </div>
+  <!-- Hero Section Ends -->
+  <!-- bicicyle list section starts -->
+  <div id="CycleListID" class="CycleListDiv">
+    <h1 class="BicycleListHeading">Bicycle <span class="HeadingDivider">List</span></h1>
+    <div class="container1">
+      <div class="card">
+        <img src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Hero Cycle</b></h4>
+          <p>Heros Cycle Are Best Cycles</p>
+          <button id="show" onclick="showDialog2()" class="btn">Info</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Avon Cysles</b></h4>
+          <p>Avon Cycle Are Best Cycles</p>
+          <button id="show" onclick="showDialog3()" class="btn">Info</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Herculas Cycles</b></h4>
+          <p>Herculas Cycle Are Best Cycles</p>
+          <button id="show" onclick="showDialog4()" class="btn">Info</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  <!-- bicicyle list section ends -->
+  <!-- about us section starts -->
+
+  <div id="AboutUsID" class="AboutUsClass">
+
+    <h1 class="AboutUsHeading"> <span class="splitAboutUsHeading">About </span>Us</h1>
+    <div class="LeftAboutUs">
+      <p>Cycle For All is an web-based platform to avail on-demand bicycle/e-bike rentals in select Indian locations. <br>The company provides GPS and Bluetooth enabled bicycles& e-bike for rent via a mobile app. <br>The user can view nearby
+        available
+        bicycles on the aweb, scan the QR code on the bicycle to unlock it and ride. <br>Users are required to park the vehicle in designated 'Cycle zones' to end the rental.<br> Its mobile app is available for iOS and Android devices.</p>
+    </div>
+    <div class="AboutUsImageClass">
+      <i class="fa fa-bicycle " style="color:white;" aria-hidden="true"></i>
+    </div>
+
+
+  </div>
+  <div class="emailClass">
+    <form class="formClassAboutUs" action="index.html" method="post">
+      <label class="emailLableClass" for="email">Suscribe:</label>
+      <input class="emailInputClass" type="email" size="40" name="email" placeholder="example@gmail.com" required>
+      <button type="submit" class="btnEmail" name="submit">Submit</button>
+    </form>
+
+  </div>
+  <div class="helpAndSupport" id="helpAndSupportID">
+    <div class="helpAndSupportInternal">
+      <h1 class="helpAndSupportHeading">Help And <span class="splitTitleHelpAndSupport">Support</span></h1>
+      <form class="formClassHelpAndSupport" action="index.html">
+        <label class="labelHelpAndSupportQuery" for="Review">Have A Question? Or Give Us A Review</label>
+        <br>
+        <textarea class="textareaClassHelpAndSupport" id="subject" name="review" cols="100" placeholder="Give Us A review" style="height:100px" required></textarea>
+        <br>
+        <label class="labelHelpAndSupportEmail" for="email">Email</label>
+        <br>
+        <input class="helpSupportEmailInput" type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        <br>
+        <br>
+        <button class="btnHelpAndSupport" type="submit" name="button">Submit</button>
+      </form>
+
+
+    </div>
+
+
+
+  </div>
+  <!-- about us section ends -->
+  <!-- find station section starts -->
+  <div id="FindStationID" class="findStation">
+
+    <form class="formClassFindStation" action="http://google.com/search" target="_blank">
+      <input class="FindStationInput" required placeholder="Search For The Company" name="q">
+      <button class="findStationSearch" id="search">Search</button>
+
+
+
+    </form>
+
+    <div class="mapClass">
+      <iframe class="iframeClassFindStation"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d65369183.36050215!2d0!3d0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc72d18c54923%3A0xcbb52c8c60f70156!2sInfoServOps!5e0!3m2!1sen!2sus!4v1617803903161!5m2!1sen!2sus" width="600"
+        height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+
+  </div>
+  <!-- find station saction ends -->
+  <!-- footer starts -->
+  <footer>
+    <div class="footerClass">
+      <div class="paragraphFooter">
+        <p>Copyright-2021</p>
+      </div>
+      <div class="footerClass2">
+        <ul class=footerContainer>
+          <li><a href="#" class="fa fa-facebook footerIcons"></a></li>
+          <li><a href="#" class="fa fa-twitter footerIcons"></a></li>
+          <li><a href="#" class="fa fa-linkedin footerIcons"></a></li>
+          <li><a href="#" class="fa fa-instagram footerIcons"></a></li>
+          <li><a href="#" class="fa fa-youtube footerIcons"></a></li>
+
+        </ul>
+        <div class="paragraphFooter">
+          <a class="footerTermsAndConditions" href="https://krud56.github.io/InternShip/copyright.html">Terms And Conditions</a>
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- footer ends -->
+  <!-- dialoge box for login starts -->
+  <div id='dialog'>
+    <form action="index.html" class="form-container">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn cancel">Login</button>
+      <button type="submit" id='close' class="cancel" onClick='closeDialog()'>Close</button>
+    </form>
+
+  </div>
+  <!-- dialoge box for login ends -->
+  <!-- dialoge box for hero cycle  starts -->
+  <div id=dialog2>
+
+    <div class="saap">
+      <div class="formClass1">
+        <img class="myImd" src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="">
+        <h2 class="descrentClass">Hero Cycle</h3>
+          <h6 class="descrentClass">Price-150Rs/Hr</h4>
+            <h6 class="descrentClass">Enjoy the comfort of hero cycles At Low Ratess</h4>
+
+      </div>
+      <div class="formClass">
+        <div class="container2">
+          <form action="billing.html">
+
+            <label class="labelClass" for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location..." required>
+            <br>
+            <br>
+            <label class="labelClass" for="date">Date</label>
+            <input type="date" id="date" name="date" placeholder="date" required>
+            <br>
+            <br>
+            <label class="labelClass" for="duration">Duration</label>
+            <input type="time" id="duration" name="duration" placeholder="Time" required>
+            <br>
+            <br>
+
+            <label class="labelClass" for="email">E-mail</label>
+
+            <input id="email" name="email" placeholder="example@gmail.com" required></input>
+            <br>
+            <br>
+
+            <button class="rentClass" type="submit" name="button">Rent!</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="submit" id='close2' class="cancel1" onClick='closeDialog2()'>Close</button>
+
+  </div>
+  <!-- dialoge box for hero cycle ends -->
+  <!-- dialoge box for avone cycle starts -->
+  <div id=dialog3>
+
+    <div class="saap">
+      <div class="formClass1">
+        <img class="myImd" src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="">
+        <h2 class="descrentClass">Avon Cycles Cycle</h3>
+          <h6 class="descrentClass">Price-100Rs/Hr</h4>
+            <h6 class="descrentClass">Enjoy the comfort of Avon cycles At Low Ratess</h4>
+
+      </div>
+      <div class="formClass">
+        <div class="container2">
+          <form action="billing.html">
+
+            <label class="labelClass" for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location..." required>
+            <br>
+            <br>
+            <label class="labelClass" for="date">Date</label>
+            <input type="date" id="date" name="date" placeholder="date" required>
+            <br>
+            <br>
+            <label class="labelClass" for="duration">Duration</label>
+            <input type="time" id="duration" name="duration" placeholder="Time" required>
+            <br>
+            <br>
+
+            <label class="labelClass" for="email">E-mail</label>
+
+            <input id="email" name="email" placeholder="example@gmail.com" required></input>
+            <br>
+            <br>
+
+            <button class="rentClass" type="submit" name="button">Rent!</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="submit" id='close3' class="cancel2" onClick='closeDialog3()'>Close</button>
+
+  </div>
+  <!-- dialoge box for avone cycle ends -->
+  <!-- dialoge box for herculas cycle starts -->
+  <div id=dialog4>
+
+    <div class="saap">
+      <div class="formClass1">
+        <img class="myImd" src="https://pngimg.com/uploads/bicycle/bicycle_PNG5388.png" alt="">
+        <h2 class="descrentClass">Herculas Cycles Cycle</h3>
+          <h6 class="descrentClass">Price-200Rs/Hr</h4>
+            <h6 class="descrentClass">Enjoy the comfort of Herculas cycles At Low Ratess</h4>
+
+      </div>
+      <div class="formClass">
+        <div class="container2">
+          <form action="billing.html">
+
+            <label class="labelClass" for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Location..." required>
+            <br>
+            <br>
+            <label class="labelClass" for="date">Date</label>
+            <input type="date" id="date" name="date" placeholder="date" required>
+            <br>
+            <br>
+            <label class="labelClass" for="duration">Duration</label>
+            <input type="time" id="duration" name="duration" placeholder="Time" required>
+            <br>
+            <br>
+
+            <label class="labelClass" for="email">E-mail</label>
+
+            <input id="email" name="email" placeholder="example@gmail.com" required></input>
+            <br>
+            <br>
+
+            <button class="rentClass" type="submit" name="button">Rent!</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <button type="submit" id='close4' class="cancel2" onClick='closeDialog4()'>Close</button>
+
+  </div>
+  <!-- dialoge box for herculas cycle ends -->
+
+
+
+
+</body>
+
+</html>
